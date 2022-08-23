@@ -16,3 +16,11 @@ if(players.length <= 5){
 const cardButton = element.parentNode.children[2]
 cardButton.setAttribute("disabled","disabled")
 }
+
+function calculate(){
+    const perPlayerText = document.getElementById('perPlayer').value
+    const perPlayer = parseFloat(perPlayerText)
+
+   const playerExpenses = document.getElementById('playerExpenses')
+   playerExpenses.innerText = perPlayer * players.length
+}
