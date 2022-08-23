@@ -24,3 +24,11 @@ function calculate(){
    const playerExpenses = document.getElementById('playerExpenses')
    playerExpenses.innerText = perPlayer * players.length
 }
+
+function calculateTotal(){
+    const playerExpenses = document.getElementById('playerExpenses').innerText
+    const manager = document.getElementById('manager').value
+    const coach = document.getElementById('coach').value
+    const total = document.getElementById('total')
+    total.innerText = parseFloat(manager) + parseFloat(coach) + parseFloat(playerExpenses)
+}
