@@ -136,9 +136,7 @@
           <div class="card mb-5" style="width: 18rem">
             <div class="card-body">
               <h5 class="card-title text-center">Selected-V</h5>
-              <ol>
-                <li>Lionel messi</li>
-              </ol>
+              <ol id="player-list"></ol>
             </div>
           </div>
           <div class="card p-0" style="width: 18rem">
@@ -153,7 +151,10 @@
                   id="per player"
                 />
               </div>
-              <button class="btn btn-dark rounded-0 w-100 mb-3">
+              <button
+                onclick="calculate"
+                class="btn btn-dark rounded-0 w-100 mb-3"
+              >
                 Calculate
               </button>
               <p>Player Expenses <span id="Player Expenses">5000</span></p>
